@@ -1,0 +1,47 @@
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(233deg, 8%, 62%);
+}
+
+.bg-colors {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+.bg-main {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.title-color {
+  color: hsl(233deg, 26%, 24%);
+}
+
+.bg-intro {
+  background-image: url(/images/bg-intro-desktop.svg);
+}
+
+.title {
+  top: 380px;
+  left: 100px;
+}
+
+.bg-options {
+  background-color: hsl(220deg, 16%, 96%);
+}
+
+#img-currency {
+  max-height: 202.667px;
+}
+
+.bg-footer {
+  background-color: hsl(233deg, 26%, 24%);
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: hsl(233deg, 8%, 62%);
+}/*# sourceMappingURL=style.css.map */
