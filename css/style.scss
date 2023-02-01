@@ -2,10 +2,14 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
     color: hsl(233, 8%, 62%);
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .bg-colors {
-    background: linear-gradient(to right,  	#31d35c,  	#2bb7da);
+    background: linear-gradient(to right, #31d35c, #2bb7da);
 }
 
 .bg-main {
@@ -17,19 +21,21 @@ body {
 }
 
 .bg-intro {
-    background-image: url(/images/bg-intro-desktop.svg);
+    background-image: url(/images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    max-width: 100%;
 }
 
 .title {
-    top: 380px;
-    left: 100px;
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
 
 .bg-options {
     background-color: hsl(220, 16%, 96%);
 }
 
-#img-currency{
+#img-currency {
     max-height: 202.667px;
 }
 
@@ -44,4 +50,35 @@ ul {
 a:link {
     text-decoration: none;
     color: hsl(233, 8%, 62%);
+}
+
+@media screen and (max-width:768px) {
+    main {
+        text-align: center;
+    }
+
+    .title {
+        padding: 2rem 0 5rem 0;
+    }
+
+    .col-online-banking {
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .bg-intro {
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        max-width: 100%;
+    }
+    .navbar-collapse {
+        position: relative;
+
+        .nav-item button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }
